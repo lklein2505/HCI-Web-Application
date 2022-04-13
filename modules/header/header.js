@@ -18,14 +18,6 @@ const Header = () => {
                     />
                     <Navbar selected="Home" />
                 </section>
-                <section className="mt-14">
-                    <h1 className="h-20 m-0 mb-1 font-bold text-7xl text-hci-lila">
-                        Design Matters
-                    </h1>
-                    <h3 className="h-14 m-0 font-normal text-5xl text-hci-lila opacity-70">
-                        Entrust us with your digital appearance
-                    </h3>
-                </section>
             </main>
         </header>
     );
