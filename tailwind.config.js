@@ -3,8 +3,8 @@ module.exports = {
   theme: {
       extend: {
           colors: {
-              'vagon-blue': '#0072BC',
-              'vagon-yellow': '#FDD526'
+                'vagon-blue': '#0072BC',
+                'vagon-yellow': '#FDD526'
           },
       },
   },
