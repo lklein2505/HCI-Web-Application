@@ -4,7 +4,7 @@ const Navbar = ({ selected }) => {
     const items = ['Home', 'Team', 'Shop', 'Fixtures', 'Contact', 'Blog'];
 
     return (
-        <nav className="pt-1 inline-flex justify-between list-none items-center relative bg-white">
+        <nav className="inline-flex justify-between list-none items-center relative bg-white rounded-t-3xl ">
             {items.map((item) => (
                 <Item key={item} isSelected={selected === item} name={item} />
             ))}

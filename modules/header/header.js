@@ -10,7 +10,7 @@ const Header = () => {
             <div className="text-center relative">
                 <Image
                     src={LogoImg}
-                    width={150}
+                    width={140}
                     height={150}
                     alt="Design logo"
                 />
