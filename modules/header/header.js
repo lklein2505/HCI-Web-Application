@@ -6,19 +6,18 @@ import Navbar from '../../components/navbar/navbar';
 
 const Header = () => {
     return (
-        <header className="h-4/6 relative flex justify-center items-center">
-            <main className="my-0 mx-auto flex flex-col min-w-sm max-w-6xl w-full">
-                <section className="flex justify-between items-center">
-                    <Image
-                        src={LogoImg}
-                        layout="fixed"
-                        width={150}
-                        height={150}
-                        alt="Design logo"
-                    />
-                    <Navbar selected="Home" />
-                </section>
-            </main>
+        <header className="h-4/6 relative justify-center items-center flex-col bg-vagon-blue bg-opacity-60">
+            <div className="text-center relative">
+                <Image
+                    src={LogoImg}
+                    width={150}
+                    height={150}
+                    alt="Design logo"
+                />
+            </div>
+            <div className="text-center pt-2 bg-vagon-blue">
+                <Navbar selected="Home" />
+            </div>
         </header>
     );
 };
