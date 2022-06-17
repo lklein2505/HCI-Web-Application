@@ -6,7 +6,7 @@ import Navbar from '../../components/navbar/navbar';
 
 const Header = () => {
     return (
-        <header className="h-4/6 relative justify-center items-center flex-col bg-gradient-to-r from-vagon-yellow to-vagon-blue">
+        <header className="h-4/6 relative justify-center items-center flex-col bg-gradient-to-r from-vagon-yellow via-slate-200 to-vagon-blue">
             <div className="text-center relative">
                 <Image
                     src={LogoImg}

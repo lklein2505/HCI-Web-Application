@@ -7,6 +7,9 @@ module.exports = {
                 'vagon-blue': '#0072BC',
                 'vagon-yellow': '#FDD526'
           },
+          backgroundImage: {
+                'background-stripes': "url('/assets/backgroundStripes.png')"
+          },
       },
   },
   variants: {
