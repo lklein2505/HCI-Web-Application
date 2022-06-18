@@ -7,13 +7,14 @@ import TeamImage from '../assets/teamImage.png';
 import BlueJersey from '../assets/blueJersey.jpg';
 import YellowJersey from '../assets/yellowJersey.jpg';
 import Scarf from '../assets/scarf1.jpg';
+import Footer from '../modules/footer/footer.js';
 
 const Hello = () => {
     return (
         <>
             <Header />
-            <div className="bg-[url('../assets/backgroundStripes.png')] w-screen h-screen">
-                <div className="h-screen bg-white m-auto w-2/3">
+            <div className="bg-[url('../assets/backgroundStripes.png')] bg-cover">
+                <div className= "bg-white m-auto w-2/3">
                     <section className="text-center p-14">
                         <h1 className="text-2xl text-vagon-blue text-opacity-80">Meet our senior squad for new season</h1>
                         <h3 className="p-2 text-vagon-blue text-opacity-70"><q>Our vagons are fast, from the first to the last</q></h3>
@@ -72,8 +73,17 @@ const Hello = () => {
                         </div>
                         <button className="m-6 px-12 py-2 border-solid border-2 border-vagon-blue rounded-3xl bg-vagon-yellow bg-opacity-60">Check our shop</button>
                     </section>
-                </div>
+                    <section className="text-center p-14">
+                        <h1 className="text-2xl text-vagon-blue text-opacity-80">Last fixtures</h1>
+                        <div className="border-2 border-vagon-blue bg-vagon-blue bg-opacity-20">
+                            <div>
+
+                            </div>
+                        </div>
+                    </section>
+                </div>              
             </div>
+            <Footer />
         </>
     );   
 }
