@@ -39,7 +39,7 @@ const Footer = () => {
                     <div className="m-2 flex content-center">
                         <Image 
                             src={Instagram}
-                            width={50}
+                            width={48}
                             height={30}
                             alt="Instagram Logo"
                         />
@@ -48,7 +48,7 @@ const Footer = () => {
                     <div className="m-2 flex content-center">
                         <Image 
                             src={Facebook}
-                            width={50}
+                            width={48}
                             height={30}
                             alt="Facebook Logo"
                         />
@@ -57,7 +57,7 @@ const Footer = () => {
                     <div className="m-2 flex content-center">
                         <Image 
                             src={Mail}
-                            width={50}
+                            width={48}
                             height={30}
                             alt="Mail Logo"
                         />
