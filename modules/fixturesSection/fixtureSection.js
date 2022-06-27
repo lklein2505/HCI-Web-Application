@@ -14,7 +14,7 @@ const Fixtures = () => {
                 <div className="grid grid-cols-5 p-5">
                     <div className="grid grid-rows-3 col-span-2">
                         <div className="m-2 flex content-center items-center justify-end px-3">
-                            <p className="pr-3">NK Vagon Zagreb</p>
+                            <p className="md:pr-3 p-0 hidden md:inline-block">NK Vagon Zagreb</p>
                             <Image 
                                 src={VagonLogo}
                                 width={35}
@@ -23,7 +23,7 @@ const Fixtures = () => {
                             />
                         </div>
                         <div className="m-2 flex content-center items-center justify-end px-3">
-                            <p className="pr-3">HNK Hajduk Split</p>
+                            <p className="md:pr-3 p-0 hidden md:inline-block">HNK Hajduk Split</p>
                             <Image 
                                 src={HajdukLogo}
                                 width={40}
@@ -32,7 +32,7 @@ const Fixtures = () => {
                             />
                         </div>
                         <div className="m-2 flex content-center items-center justify-end px-3">
-                            <p className="pr-3">GNK Dinamo Zagreb</p>
+                            <p className="md:pr-3 p-0 hidden md:inline-block">GNK Dinamo Zagreb</p>
                             <Image 
                                 src={DinamoLogo}
                                 width={35}
@@ -60,16 +60,7 @@ const Fixtures = () => {
                                 height={40}
                                 alt="LokomotivaLogo"
                             />
-                            <p className="pl-3">NK Lokomotiva Zagreb</p>
-                        </div>
-                        <div className="m-2 flex content-center items-center px-3">
-                            <Image 
-                                    src={VagonLogo}
-                                width={35}
-                                height={40}
-                                alt="VagonLogo"
-                            />
-                            <p className="pl-3">NK Vagon Zagreb</p>
+                            <p className="md:pl-3 p-0 hidden md:inline-block">NK Lokomotiva Zagreb</p>
                         </div>
                         <div className="m-2 flex content-center items-center px-3">
                             <Image 
@@ -78,7 +69,16 @@ const Fixtures = () => {
                                 height={40}
                                 alt="VagonLogo"
                             />
-                            <p className="pl-3">NK Vagon Zagreb</p>
+                            <p className="md:pl-3 p-0 hidden md:inline-block">NK Vagon Zagreb</p>
+                        </div>
+                        <div className="m-2 flex content-center items-center px-3">
+                            <Image 
+                                src={VagonLogo}
+                                width={35}
+                                height={40}
+                                alt="VagonLogo"
+                            />
+                            <p className="md:pl-3 p-0 hidden md:inline-block">NK Vagon Zagreb</p>
                         </div>
                     </div>
                 </div>

@@ -8,7 +8,7 @@ import Mail from '../../assets/email.png';
 
 const Footer = () => {
     return (
-        <footer className="h-4/6 relative justify-center items-center flex-col bg-gradient-to-r from-vagon-yellow via-slate-200 to-vagon-blue">
+        <footer className="hidden sm:block h-4/6 relative justify-center items-center flex-col bg-gradient-to-r from-vagon-yellow via-slate-200 to-vagon-blue">
             <div className="p-8 grid grid-cols-3 gap-3">
                 <div className="">
                     <div className="">
