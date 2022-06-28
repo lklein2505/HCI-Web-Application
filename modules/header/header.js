@@ -4,6 +4,7 @@ import Image from 'next/image';
 import LogoImg from '../../assets/logo.png';
 import Navbar from '../../components/navbar/navbar';
 import Hamburger from '../../public/icons8-menu.svg';
+import BurgerNavigation from '../../components/burgerNav';
 
 const Header = () => {
 
@@ -19,10 +20,11 @@ const Header = () => {
                     alt="Design logo"
                 />
             </div>
-            <div className="flex justify-center m-4 sm:hidden">
+            <div className="flex justify-center m-4 md:hidden">
+                <BurgerNavigation isOpen={isClicked} />
                 <Image
                     onClick={() => setIsClicked(!isClicked)}
-                    className={`cursor-pointer transition-all ease-linear duration-700 ${
+                    className={`cursor-pointer z-50 transition-all ease-linear duration-700 ${
                         isClicked ? 'transform rotate-90' : ''
                     }`}
                     src={Hamburger}
