@@ -24,7 +24,7 @@ const Header = () => {
                 <BurgerNavigation isOpen={isClicked} />
                 <Image
                     onClick={() => setIsClicked(!isClicked)}
-                    className={`cursor-pointer z-50 transition-all ease-linear duration-700 ${
+                    className={`transform scale-90 cursor-pointer z-50 transition-all ease-linear duration-700 ${
                         isClicked ? 'transform rotate-90' : ''
                     }`}
                     src={Hamburger}

@@ -1,5 +1,7 @@
+/* eslint-disable @next/next/link-passhref */
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import TeamImage from '../../assets/teamImage.png';
 
@@ -16,7 +18,10 @@ export default function Team() {
                     alt="Team photo"
                  />
             </div>
-            <button className="m-6 sm:px-12 sm:py-2 px-8 py-1 border-solid border-2 border-vagon-blue rounded-3xl bg-vagon-yellow bg-opacity-60">Meet the team</button>
+            <Link href={"/team"}>
+                <button className="m-6 sm:px-12 sm:py-2 px-8 py-1 border-solid border-2 border-vagon-blue rounded-3xl bg-vagon-yellow bg-opacity-60">Meet the team</button>
+            </Link> 
+            
         </section>        
     );
 }

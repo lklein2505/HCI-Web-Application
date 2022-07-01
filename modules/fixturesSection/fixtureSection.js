@@ -1,5 +1,7 @@
+/* eslint-disable @next/next/link-passhref */
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import VagonLogo from '../../assets/logo.png';
 import HajdukLogo from '../../assets/hajduk.png';
@@ -83,7 +85,9 @@ const Fixtures = () => {
                     </div>
                 </div>
             </div>
-            <button className="m-2 px-12 py-2 border-solid border-2 border-vagon-blue rounded-3xl bg-vagon-yellow bg-opacity-60">See more</button>
+            <Link href={"/fixtures"}>
+                <button className="m-6 px-12 py-2 border-solid border-2 border-vagon-blue rounded-3xl bg-vagon-yellow bg-opacity-60">See more</button>
+            </Link>
         </section>
     );
 }
