@@ -1,10 +1,8 @@
-import { useRouter } from 'next/router';
 import Header from '../modules/header/header';
 import Footer from '../modules/footer/footer';
 import Shop from '../modules/shopPage/shopPage.js';
 
 const ShopPage = () => {
-    const router = useRouter();
 
     return (
         <>

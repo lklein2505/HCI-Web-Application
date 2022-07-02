@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 import BlueJersey from '../../assets/blueJersey.jpg';
 import YellowJersey from '../../assets/yellowJersey.jpg';
@@ -28,6 +29,9 @@ const products = [
 ];
 
 const Products = () => {
+
+    const router = useRouter();
+
     return (
         <section className="text-center p-14 grid place-items-center">
             <h1 className="text-2xl text-vagon-blue text-opacity-80">Be part of our story with brand new products in our web shop</h1>

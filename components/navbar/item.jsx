@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const selectedStyle =
     "cursor-pointer w-24 py-3 font-bold text-base text-center text-vagon-blue text-opacity-60 bg-neutral-200 border-l-2";
 const defaultStyle =
@@ -5,11 +7,11 @@ const defaultStyle =
 const lastStyle = 
     "cursor-pointer w-24 py-3 font-normal text-base text-center text-black rounded-tr-3xl hover:text-vagon-blue hover:text-opacity-60 hover:bg-neutral-200 hover:rounded-tr-3xl border-l-2 bg-white"
 const firstStyle = 
-    "cursor-pointer w-24 py-3 font-normal text-base text-center text-black hover:text-vagon-blue hover:text-opacity-60 hover:bg-neutral-200 border-l-2 bg-white"
+    "cursor-pointer w-24 py-3 font-normal text-base text-center text-black hover:text-vagon-blue hover:text-opacity-60 hover:bg-neutral-200 border-l-2 bg-white rounded-tl-3xl"
 const selectedFirstStyle = 
     "cursor-pointer w-24 py-3 font-bold text-base text-center text-vagon-blue text-opacity-60 bg-neutral-200 border-x-2 rounded-tl-3xl";
 const selectedLastStyle = 
-    "cursor-pointer w-24 py-3 font-bold text-base text-center text-vagon-blue text-opacity-60 bg-neutral-200 border-l-2";
+    "cursor-pointer w-24 py-3 font-bold text-base text-center text-vagon-blue text-opacity-60 bg-neutral-200 border-l-2 rounded-tr-3xl";
 
 const Item = ({ name, isSelected }) => (
     <li className={
@@ -20,7 +22,10 @@ const Item = ({ name, isSelected }) => (
         (!isSelected && (name=="Blog")) ? lastStyle : defaultStyle    
     }
     >
-    {name}
+    <Link href={name.toLowerCase()}>
+        {name}
+    </Link>
+    
     </li>
 );
 

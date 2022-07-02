@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import Header from '../modules/header/header';
 import Footer from '../modules/footer/footer';
-import Fixtures from '../modules/fixturesSection/fixtureSection';
+import Fixtures from '../modules/fixturesPage/fixturesPage';
 
 const FixturesPage = () => {
     const router = useRouter();

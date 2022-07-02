@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
+import router, { useRouter } from 'next/router';
 
 import LogoImg from '../../assets/logo.png';
 import Navbar from '../../components/navbar/navbar';
@@ -9,6 +10,7 @@ import BurgerNavigation from '../../components/burgerNav';
 const Header = () => {
 
     const [isClicked, setIsClicked] = useState(false);
+    const router = useRouter();
 
     return (
         <header className="h-4/6 relative justify-center items-center flex-col bg-gradient-to-r from-vagon-yellow via-slate-200 to-vagon-blue">
@@ -37,13 +39,12 @@ const Header = () => {
             <div className="flex justify-between">
                 <div className="w-24 ml-10"></div>
                 <div className="text-center">
-                    <Navbar selected="Home" />
+                    <Navbar selected={router.pathname} />
                 </div>
                 <div className="hidden md:inline-block cursor-pointer w-24 mr-10 pt-3 border-b-2 font-normal rounded-t-3xl text-base text-center text-black hover:text-vagon-blue hover:text-opacity-60 hover:bg-neutral-200 border-l-2 bg-white">
                     <button>Log In</button>
                 </div>
             </div>
-
         </header>
     );
 };
