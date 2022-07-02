@@ -7,6 +7,18 @@ import Scarf2 from '../assets/scarf2.webp';
 import Hat from '../assets/hat.webp';
 import ThirdJersey from '../assets/thirdJersey.png';
 import Armbands from '../assets/armbands.jpg';
+import Boots from '../assets/boots.jpg';
+import Bracelet from '../assets/bracelet.webp';
+import Football1 from '../assets/football.jpg';
+import Football2 from '../assets/football2.webp';
+import Hoodie from '../assets/hoodie.jpg';
+import Pants from '../assets/pants.jpg';
+import RetroKit from '../assets/retroKit.webp';
+import Shirt1 from '../assets/shirt.jpg';
+import Shirt2 from '../assets/shirt2.jpg';
+import Shorts from '../assets/shorts.jpg';
+import SwimShorts from '../assets/swimShorts.webp';
+import Sunglasses from '../assets/sunglasses.jpg';
 
 export const productList = [
     {
@@ -36,7 +48,7 @@ export const productList = [
     {
         id: 5,
         image: BlueCap,
-        name: "Blue cap",
+        name: "Cap",
         price: "6.99€"
     },
     {
@@ -62,5 +74,77 @@ export const productList = [
         image: ThirdJersey,
         name: "Third kit",
         price: "18.99€"
+    },
+    {
+        id: 10,
+        image: Boots,
+        name: "Football boots",
+        price: "14.99€"
+    },
+    {
+        id: 11,
+        image: Bracelet,
+        name: "Bracelet",
+        price: "3.99€"
+    },
+    {
+        id: 12,
+        image: Football1,
+        name: "Ball (Blue and yellow)",
+        price: "7.99€"
+    },
+    {
+        id: 13,
+        image: Football2,
+        name: "Ball (Blue and white)",
+        price: "7.99€"
+    },
+    {
+        id: 14,
+        image: Hoodie,
+        name: "Hoodie",
+        price: "13.99€"
+    },
+    {
+        id: 15,
+        image: Pants,
+        name: "Pants",
+        price: "11.99€"
+    },
+    {
+        id: 16,
+        image: RetroKit,
+        name: "Retro kit",
+        price: "14.99€"
+    },
+    {
+        id: 17,
+        image: Shirt1,
+        name: "Shirt",
+        price: "7.99€"
+    },
+    {
+        id: 18,
+        image: Shirt2,
+        name: "Shirt",
+        price: "7.99€"
+    },
+    {
+        id: 19,
+        image: Shorts,
+        name: "Shorts",
+        price: "6.99€"
+    },
+    {
+        id: 20,
+        image: SwimShorts,
+        name: "Swim shorts",
+        price: "6.99€"
+    },
+    {
+        id: 21,
+        image: Sunglasses,
+        name: "Sunglasses",
+        price: "5.99€"
     },
 ]

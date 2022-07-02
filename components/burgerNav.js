@@ -1,5 +1,6 @@
+import Link from "next/dist/client/link";
+
 import { navigationItems } from "../const/navbarList";
-import Navbar from "./navbar/navbar";
 
 const BurgerNavigation = ({ isOpen }) => {
     return (
@@ -11,7 +12,7 @@ const BurgerNavigation = ({ isOpen }) => {
                     key={e}
                     className="text-center mt-14 list-none p-0"
                 >
-                    {e}
+                    <Link href={"/" + e.toLowerCase()}>{e}</Link>                   
                 </li>
             ))}
        </main> 

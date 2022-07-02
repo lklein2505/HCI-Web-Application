@@ -1,5 +1,7 @@
+/* eslint-disable @next/next/link-passhref */
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import router, { useRouter } from 'next/router';
 
 import LogoImg from '../../assets/logo.png';
@@ -42,7 +44,9 @@ const Header = () => {
                     <Navbar selected={router.pathname} />
                 </div>
                 <div className="hidden md:inline-block cursor-pointer w-24 mr-10 pt-3 border-b-2 font-normal rounded-t-3xl text-base text-center text-black hover:text-vagon-blue hover:text-opacity-60 hover:bg-neutral-200 border-l-2 bg-white">
-                    <button>Log In</button>
+                    <Link href="/login">
+                        <button>Log In</button>                    
+                    </Link>
                 </div>
             </div>
         </header>
