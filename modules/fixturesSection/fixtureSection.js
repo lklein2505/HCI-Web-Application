@@ -86,7 +86,7 @@ const Fixtures = () => {
                 </div>
             </div>
             <Link href={"/fixtures"}>
-                <button className="m-6 px-12 py-2 border-solid border-2 border-vagon-blue rounded-3xl bg-vagon-yellow bg-opacity-60">See more</button>
+                <button className="m-4 px-12 py-2 border-solid border-2 border-vagon-blue rounded-3xl bg-vagon-yellow bg-opacity-60">See more</button>
             </Link>
         </section>
     );

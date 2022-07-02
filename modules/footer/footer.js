@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/dist/client/link';
 
 import LogoImg from '../../assets/logo.png';
 import Instagram from '../../assets/instagram.png';
@@ -17,11 +18,21 @@ const Footer = () => {
                     <div className="hidden md:grid grid-col-2 p-2 justify-end">
                         <div className="w-4/5"></div>
                         <div className="w-1/5 grid rows-6">
-                            <button>Home</button>
-                            <button>Team</button>
-                            <button>Shop</button>
-                            <button>Fixtures</button>
-                            <button>Contact</button>
+                            <Link href="/home">
+                                <button>Home</button>
+                            </Link>
+                            <Link href="/team">
+                                <button>Team</button>
+                            </Link>
+                            <Link href="/shop">
+                                <button>Shop</button>
+                            </Link>
+                            <Link href="/fixtures">
+                                <button>Fixtures</button>
+                            </Link>
+                            <Link href="/contact">
+                                <button>Contact</button>
+                            </Link>
                             <button>Blog</button>
                         </div>
                     </div>                 

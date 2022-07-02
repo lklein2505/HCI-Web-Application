@@ -47,7 +47,7 @@ const Products = () => {
                 ))}
             </div>
             <Link href={"/shop"}>
-                <button className="m-6 px-12 py-2 border-solid border-2 border-vagon-blue rounded-3xl bg-vagon-yellow bg-opacity-60">Check out our shop</button>
+                <button className="m-8 px-12 py-2 border-solid border-2 border-vagon-blue rounded-3xl bg-vagon-yellow bg-opacity-60">Check out our shop</button>
             </Link>
             
         </section>        
