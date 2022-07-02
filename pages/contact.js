@@ -17,7 +17,7 @@ const ContactPage = () => {
                     <div className="text-center p-14 grid place-items-center">
                         <h1 className="text-2xl text-vagon-blue text-opacity-80">Feel free to contact us!</h1>
                         <h3 className="p-2 text-vagon-blue text-opacity-70"><q>Our support team will be on disposition!</q></h3>
-                        <div className="border-2 border-vagon-blue bg-vagon-blue bg-opacity-20 w-2/4 m-5 rounded-3xl">
+                        <div className="border-2 border-vagon-blue bg-vagon-blue bg-opacity-20 w-2/4 m-5 rounded-3xl shadow-md">
                             <div className="hidden md:grid grid-rows-3 py-32 px-auto">
                                 <div className="m-2 flex justify-center">
                                     <p>Instagram: <button className="p-2">nk_vagon1951</button></p> 

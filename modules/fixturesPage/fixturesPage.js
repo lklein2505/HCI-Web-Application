@@ -17,7 +17,7 @@ const Fixtures = () => {
     return (
         <section className="text-center p-14 grid place-items-center">
             <h1 className="text-2xl text-vagon-blue text-opacity-80">Last fixtures</h1>
-            <div className="border-2 border-vagon-blue bg-vagon-blue bg-opacity-20 w-3/4 m-5 rounded-3xl">
+            <div className="border-2 border-vagon-blue bg-vagon-blue bg-opacity-20 w-3/4 m-5 rounded-3xl shadow-md">
                 <div className="grid grid-cols-5 p-5">
                     <div className="grid grid-rows-8 col-span-2">
                         <div className="m-2 flex content-center items-center justify-end px-3">
