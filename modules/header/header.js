@@ -2,7 +2,9 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import router, { useRouter } from 'next/router';
+import { useRouter } from 'next/router';
+import { useContext } from 'react';
+import AuthContext from '../../stores/authContext';
 
 import LogoImg from '../../assets/logo.png';
 import Navbar from '../../components/navbar/navbar';
@@ -10,6 +12,7 @@ import Hamburger from '../../public/icons8-menu.svg';
 import BurgerNavigation from '../../components/burgerNav';
 
 const Header = () => {
+    const { user, login, logout } = useContext(AuthContext)
 
     const [isClicked, setIsClicked] = useState(false);
     const router = useRouter();
@@ -43,11 +46,12 @@ const Header = () => {
                 <div className="text-center">
                     <Navbar selected={router.pathname} />
                 </div>
-                <div className="hidden md:inline-block cursor-pointer w-24 mr-10 pt-3 border-b-2 font-normal rounded-t-3xl text-base text-center text-black hover:text-vagon-blue hover:text-opacity-60 hover:bg-neutral-200 border-l-2 bg-white">
-                    <Link href="/login">
-                        <button>Log In</button>                    
-                    </Link>
-                </div>
+                {!user && <div className="hidden md:inline-block cursor-pointer w-24 mr-10 pt-3 border-b-2 font-normal rounded-t-3xl text-base text-center text-black hover:text-vagon-blue hover:text-opacity-60 hover:bg-neutral-200 border-l-2 bg-white">
+                    <button onClick={login}>Log In</button>                    
+                </div>}
+                {user && <div className="hidden md:inline-block cursor-pointer w-24 mr-10 pt-3 border-b-2 font-normal rounded-t-3xl text-base text-center text-black hover:text-vagon-blue hover:text-opacity-60 hover:bg-neutral-200 border-l-2 bg-white">
+                    <button onClick={logout}>Log Out</button>                    
+                </div>}
             </div>
         </header>
     );

@@ -36,7 +36,6 @@ function BlogListItem ({ slug, title, date, content }) {
                 </Link>
             </div>
             <div className="text-vagon-blue text-opacity-60">{format(parseISO(date), 'MMMM do, uuu')}</div>
-            <div className="py-5">{content}</div>
         </div>
     )
 }

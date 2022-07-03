@@ -1,5 +1,7 @@
 import Item from './item';
 import { navigationItems } from '../../const/navbarList';
+import { useContext } from 'react';
+import AuthContext from '../../stores/authContext';
 
 const Navbar = ({ classes, selected }) => {
     
