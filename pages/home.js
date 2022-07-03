@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
-import Image from 'next/image';
 
 import Header from '../modules/header/header.js';
 import Footer from '../modules/footer/footer.js';
